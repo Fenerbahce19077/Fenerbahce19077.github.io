@@ -70,8 +70,15 @@ function getUserMedia(options, successCallback, failureCallback) {
 
 const saveImage = function(){
     rawImage = document.getElementById('imageTag');
-    imgData = getBase64Image(bannerImage);
+    imgData = getBase64Image(rawImage);
     localStorage.setItem("imgData", imgData);
 };
+
+const loadImage = function(){
+    var image = new Image();
+    loadImg = document.getElementById('loadImg');
+    image.src = localStorage.getItem(imgData);
+    loadImg.appendChild(image);
+}
 
 
