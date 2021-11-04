@@ -76,7 +76,7 @@ const saveImage = function(){
 
 const loadImage = function(){
     var loadImg = document.getElementById('loadImg');
-    loadImage = localStorage.getItem('imgData');
+    loadImage.src = localStorage['imgData'];
 }
 
 
