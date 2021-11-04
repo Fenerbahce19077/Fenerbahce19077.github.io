@@ -74,4 +74,3 @@ const saveImage = function(){
     localStorage.setItem("imgData", imgData);
 };
 
-
