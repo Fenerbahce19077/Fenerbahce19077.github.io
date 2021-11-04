@@ -102,7 +102,7 @@ function getStream (type) {
     });
 }
 
-document.addEventListener("DOMContentLoaded", showCoffees);
+// document.addEventListener("DOMContentLoaded", showCoffees);
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", function() {
