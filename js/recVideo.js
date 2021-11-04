@@ -66,7 +66,7 @@ function getUserMedia(options, successCallback, failureCallback) {
     var dataURL = canvas.toDataURL("image/png");
 
     return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
-};s
+};
 
 const saveImage = function(){
     rawImage = document.getElementById('imageTag');
