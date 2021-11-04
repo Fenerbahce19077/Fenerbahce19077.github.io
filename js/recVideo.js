@@ -55,13 +55,7 @@ function getUserMedia(options, successCallback, failureCallback) {
       .catch(err => alert('Error: ' + err));
   }
 
-const saveImage = function(){
-    rawImage = document.getElementById('imageTag');
-    imgData = getBase64Image(bannerImage);
-    localStorage.setItem("imgData", imgData);
-};
-
-function getBase64Image(img) {
+  function getBase64Image(img) {
     var canvas = document.createElement("canvas");
     canvas.width = img.width;
     canvas.height = img.height;
@@ -72,4 +66,12 @@ function getBase64Image(img) {
     var dataURL = canvas.toDataURL("image/png");
 
     return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
+};s
+
+const saveImage = function(){
+    rawImage = document.getElementById('imageTag');
+    imgData = getBase64Image(bannerImage);
+    localStorage.setItem("imgData", imgData);
 };
+
+
