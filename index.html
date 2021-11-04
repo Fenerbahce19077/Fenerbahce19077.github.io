@@ -34,13 +34,14 @@
           <div class="column">
             <p><button type="button" onclick="getStream('video')">Grab video</button></p>
             
-            <video controls autoplay style="height:180px; width: 240px;"></video>
+            <video id="video" controls autoplay style="height:180px; width: 240px;"></video>
 
-            <p><button type="button" onclick="">Take a pic</button></p>
-            
+            <button id="click-photo">Click Photo</button>
+            <canvas id="canvas" width="320" height="240"></canvas>
+
           </div>
           
-
+          
           <div class="column">
             <p><button type="button" onclick="getStream('audio')">Grab audio</button></p>
             
