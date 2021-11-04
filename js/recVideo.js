@@ -74,3 +74,11 @@ const saveImage = function(){
     localStorage.setItem("imgData", imgData);
 };
 
+const loadImage = function(){
+    var image = new Image();
+    loadImg = document.getElementById('loadImg');
+    image.src = localStorage.getItem(imgData);
+    loadImg.appendChild(image);
+}
+
+
